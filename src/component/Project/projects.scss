@@ -1,0 +1,126 @@
+@import "../../styles/index.scss";
+
+.projects {
+  padding: 0 15px;
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    &_title {
+      max-width: 285px;
+      width: 100%;
+      height: 60px;
+      &_text {
+        font-weight: 300;
+        font-size: 48px;
+        text-align: justify;
+        letter-spacing: 0.25em;
+        color: $main-color;
+      }
+    }
+    &_subtitle {
+      max-width: 515px;
+      width: 100%;
+      height: 200px;
+      &_text {
+        font-weight: 300;
+        font-size: 24px;
+        text-align: justify;
+        color: $second-color;
+      }
+    }
+  }
+}
+
+.prcp_route {
+  margin-top: 100px;
+  margin-bottom: 160px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    &_top {
+      flex-wrap: wrap;
+      justify-content: center;
+      &_title {
+        margin-bottom: 20px;
+        &_text {
+        }
+      }
+      &_subtitle {
+        max-width: max-content;
+        height: auto;
+        &_text {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding-top: 50px;
+    &_top {
+      flex-direction: column;
+      align-items: center;
+      &_title {
+        &_text {
+          font-size: 36px;
+          text-align: center;
+        }
+      }
+      &_subtitle {
+        max-width: 100%;
+        margin-top: 20px;
+        height: auto;
+        &_text {
+        }
+      }
+    }
+  }
+  .prcp_route {
+    margin: 100px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    &_top {
+      &_title {
+        &_text {
+        }
+      }
+      &_subtitle {
+        &_text {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .prcp_route {
+  }
+}
+
+@media (max-width: 320px) {
+  .projects {
+    &_top {
+      &_title {
+        &_text {
+        }
+      }
+      &_subtitle {
+        &_text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .prcp_route {
+  }
+}

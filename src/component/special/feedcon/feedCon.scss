@@ -1,0 +1,103 @@
+@import "../../../styles/index.scss";
+
+.feedcon {
+  &_top {
+    &_title {
+      font-weight: 500;
+      font-size: 24px;
+      text-align: justify;
+      color: $main-color;
+    }
+  }
+  &_middle {
+    &_form {
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      max-width: 660px;
+      width: 100%;
+      &_imput {
+        font-weight: 300;
+        font-size: 24px;
+        text-align: justify;
+        color: $second-color;
+        height: 90px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid $stroke-color;
+      }
+      &_textarea {
+        margin-top: 30px;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        border: none;
+        outline: none;
+        resize: none;
+        font-weight: 300;
+        font-size: 24px;
+        text-align: justify;
+        color: $second-color;
+        border-bottom: 2px solid $stroke-color;
+      }
+      &_button {
+        margin-top: 40px;
+        background: $main-color;
+        border-radius: 15px;
+        color: $button-color;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: justify;
+        max-width: 320px;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .feedcon {
+    margin-bottom: 50px;
+    &_top {
+      &_title {
+      }
+    }
+    &_middle {
+      &_form {
+        padding-bottom: 0;
+        max-width: 100%;
+        &_imput {
+        }
+        &_textarea {
+        }
+        &_button {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .feedcon {
+    &_top {
+      &_title {
+        text-align: left;
+      }
+    }
+    &_middle {
+      &_form {
+        &_imput {
+        }
+        &_textarea {
+        }
+        &_button {
+        }
+      }
+    }
+  }
+}

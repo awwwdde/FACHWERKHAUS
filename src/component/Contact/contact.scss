@@ -1,0 +1,135 @@
+@import "../../styles/index.scss";
+
+.contact {
+  padding: 0 15px;
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+  &_top {
+    &_text {
+      &_title {
+        font-weight: 300;
+        font-size: 48px;
+        text-align: justify;
+        letter-spacing: 0.25em;
+        color: $main-color;
+      }
+    }
+  }
+  &_main {
+    margin-top: 100px;
+    &_descr {
+      max-width: 1350px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      &_s {
+        &_block {
+          &_title {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: justify;
+            color: $main-color;
+          }
+          &_subtitle {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: justify;
+            color: $second-color;
+          }
+        }
+      }
+      &_form {
+        max-width: 675px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    &_top {
+      &_text {
+        &_title {
+        }
+      }
+    }
+    &_main {
+      &_descr {
+        &_s {
+          &_block {
+            &_title {
+            }
+            &_subtitle {
+            }
+          }
+        }
+        &_form {
+          max-width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 0 35px;
+    margin-top: 40px;
+    &_top {
+      &_text {
+        &_title {
+        }
+      }
+    }
+    &_main {
+      margin-top: 30px;
+      &_descr {
+        flex-direction: column;
+        &_s {
+          &_block {
+            margin-bottom: 30px;
+            &_title {
+            }
+            &_subtitle {
+            }
+          }
+        }
+        &_form {
+          margin-top: 50px;
+          margin-left: 0;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    &_top {
+      &_text {
+        &_title {
+          font-size: 38px;
+        }
+      }
+    }
+    &_main {
+      &_descr {
+        &_s {
+          &_block {
+            &_title {
+            }
+            &_subtitle {
+              font-size: 20px;
+            }
+          }
+        }
+        &_form {
+        }
+      }
+    }
+  }
+}

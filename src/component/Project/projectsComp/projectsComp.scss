@@ -1,0 +1,127 @@
+@import "../../../styles/index.scss";
+.prcm {
+  display: flex;
+  justify-content: space-between;
+  &_img {
+    max-width: 620px;
+    width: 100%;
+    height: auto;
+    background: #000;
+    &_pics {
+      max-width: 620px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 515px;
+    width: 100%;
+    margin-left: 15px;
+    &_link {
+      max-width: 320px;
+      width: 100%;
+      height: 45px;
+      background: $main-color;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &_name {
+      &_text {
+        font-weight: 300;
+        font-size: 48px;
+        text-align: justify;
+        letter-spacing: 0.25em;
+        color: $main-color;
+      }
+    }
+    &_descr {
+      margin-top: 10px;
+      &_text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: justify;
+        color: $second-color;
+      }
+    }
+    &_button {
+      &_text {
+        font-weight: 400;
+        font-size: 14px;
+        text-align: justify;
+        color: $button-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .prcm {
+    flex-direction: column;
+    &_img {
+      max-width: 100%;
+      &_pics {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &_info {
+      max-width: 100%;
+      margin-left: 0;
+      height: auto;
+      margin-top: 20px;
+      &_name {
+        &_text {
+        }
+      }
+      &_descr {
+        &_text {
+          font-size: 18px;
+        }
+      }
+      &_link {
+        margin-left: auto;
+      }
+      &_button {
+        max-width: 100%;
+        margin-top: 0;
+        height: auto;
+        &_text {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .prcm {
+    &_img {
+      &_pics {
+      }
+    }
+    &_info {
+      &_name {
+        &_text {
+          font-size: 36px;
+        }
+      }
+      &_descr {
+        &_text {
+          margin-bottom: 15px;
+        }
+      }
+      &_button {
+        &_text {
+        }
+      }
+      &_link {
+        max-width: 100%;
+      }
+    }
+  }
+}

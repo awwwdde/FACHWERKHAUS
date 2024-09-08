@@ -1,0 +1,39 @@
+@import "../../../styles/index.scss";
+
+.ProjectSwitch {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  &_photo {
+    &_pic {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.ProjectSwitch .carousel-inner {
+  max-height: 700px;
+  margin-top: 35px;
+}
+.ProjectSwitch .carousel-indicators {
+  position: absolute;
+  top: 10px;
+  bottom: auto;
+}
+
+@media (max-width: 480px) {
+  .ProjectSwitch {
+    height: auto;
+    &_photo {
+      &_pic {
+        height: auto;
+      }
+    }
+  }
+  .ProjectSwitch .carousel-inner {
+  }
+  .ProjectSwitch .carousel-indicators {
+  }
+}

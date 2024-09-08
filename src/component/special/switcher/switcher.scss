@@ -1,0 +1,75 @@
+@import "../../../styles/index.scss";
+
+.switcher {
+  // max-height: 820px;
+  height: 100%;
+  max-width: 1200px;
+
+  &:first-child {
+  }
+  &_img {
+    &_pic {
+      width: 100%;
+    }
+  }
+  &_text {
+    margin-top: 55px;
+    &_descr {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: justify;
+      color: $second-color;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .switcher {
+    max-width: 100%;
+    &:first-child {
+    }
+    &_img {
+      &_pic {
+      }
+    }
+    &_text {
+      margin-top: 25px;
+      &_descr {
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .switcher {
+    &:first-child {
+    }
+    &_img {
+      &_pic {
+      }
+    }
+    &_text {
+      margin-top: 25px;
+      &_descr {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .switcher {
+    &:first-child {
+    }
+    &_img {
+      &_pic {
+      }
+    }
+    &_text {
+      &_descr {
+        font-size: 18px;
+      }
+    }
+  }
+}

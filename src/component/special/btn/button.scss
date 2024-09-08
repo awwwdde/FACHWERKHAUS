@@ -1,0 +1,84 @@
+@import "../../../styles/index.scss";
+
+.btn {
+  &_block {
+    max-width: 1920px;
+    width: 100%;
+    height: 50px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+  }
+  &_kn {
+    height: 45px;
+    background: $main-color;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_text {
+      font-weight: 400;
+      font-size: 14px;
+      color: #ffffff;
+      margin: 0;
+    }
+  }
+  &_link {
+    width: 100%;
+  }
+}
+
+// @media (max-width: 720px) {
+//   .btn {
+//     &_block {
+//       max-width: 325px;
+//       width: 100%;
+//       height: 25px;
+//       margin-top: 0;
+//       display: flex;
+//       justify-content: center;
+//     }
+//     &_kn {
+//       height: 25px;
+//       background: $main-color;
+//       border-radius: 15px;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       &_text {
+//         font-weight: 400;
+//         font-size: 10px;
+//         color: #ffffff;
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 480px) {
+  .btn {
+    &_block {
+      max-width: 100%;
+      height: inherit;
+    }
+    &_kn {
+      height: 45px;
+      &_text {
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .btn {
+    &_block {
+      max-width: 100%;
+      height: inherit;
+      margin-top: 10px;
+    }
+    &_kn {
+      height: 45px;
+      &_text {
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../../styles/index.scss";
+
+.slider_view_block {
+  position: relative;
+  max-width: 878px;
+  width: 100%;
+  height: 585px;
+  margin: 0 auto;
+}
+
+.View_Slider .carousel-inner {
+  height: 585px;
+  margin-top: 70px;
+}
+.View_Slider .carousel-indicators {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: -90px;
+  transform: rotate(90deg) translate(-50%, -50%);
+  bottom: auto;
+}
+
+// @media (max-width: 768px) {
+//   .slider_view_block {
+//     position: relative;
+//     max-width: 325px;
+//     width: 100%;
+//     height: 290px;
+//     margin: 0 auto;
+//   }
+
+//   .View_Slider .carousel-inner {
+//     height: 275px;
+//     margin-top: 130px;
+//   }
+//   .View_Slider .carousel-indicators {
+//     position: absolute;
+//     top: 50%;
+//     left: auto;
+//     right: -10px;
+//     transform: rotate(90deg) translate(-50%, -50%);
+//     bottom: auto;
+//   }
+// }
+
+@media (max-width: 768px) {
+  .slider_view_block {
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .View_Slider .carousel-inner {
+    margin-top: 60px;
+    height: 100%;
+  }
+  .View_Slider .carousel-indicators {
+    width: 100%;
+    transform: none;
+    justify-content: center;
+    top: 0;
+    right: 0;
+  }
+}

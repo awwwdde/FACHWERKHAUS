@@ -1,0 +1,188 @@
+@import "../../../styles/index.scss";
+.feedback {
+  margin: 0 auto;
+  max-width: 1420px;
+  width: 100%;
+  height: 675px;
+  &_title {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    &_text {
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 58px;
+      text-align: justify;
+      letter-spacing: 0.25em;
+      color: $main-color;
+    }
+    &_sub {
+      max-width: 700px;
+      width: 100%;
+      height: 65px;
+
+      &_title {
+        font-weight: 500;
+        font-size: 36px;
+        text-align: justify;
+        color: $main-color;
+      }
+    }
+  }
+  &_form {
+    margin-top: 145px;
+    display: flex;
+    flex-direction: row;
+    &_img {
+      max-width: 670px;
+      width: 100%;
+    }
+    &_img img {
+      max-width: 670px;
+      width: 100%;
+      height: 100%;
+    }
+    &_contact {
+      max-width: 660px;
+      width: 100%;
+      position: relative;
+      &_label {
+        padding-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        max-width: 660px;
+        width: 100%;
+        padding-left: 15px;
+      }
+      &_imput {
+        font-weight: 300;
+        font-size: 24px;
+        text-align: justify;
+        color: $second-color;
+
+        height: 90px;
+        border: none;
+        // margin-bottom: 30px;
+        outline: none;
+        border-bottom: 2px solid $stroke-color;
+      }
+      &_textarea {
+        font-weight: 300;
+        font-size: 24px;
+        text-align: justify;
+        color: $second-color;
+        padding-top: 30px;
+        border: none;
+        outline: none;
+        resize: none;
+        border-bottom: 2px solid $stroke-color;
+        margin-bottom: 45px;
+      }
+      &_btn {
+        position: absolute;
+        bottom: 0;
+        background: $main-color;
+        border-radius: 15px;
+        color: $button-color;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: justify;
+        max-width: 320px;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback {
+    height: 100%;
+    &_title {
+      &_text {
+      }
+      &_sub {
+        height: 100%;
+        &_title {
+          text-align: start;
+        }
+      }
+    }
+    &_form {
+      margin: 50px 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback {
+    height: 100%;
+    margin-bottom: 50px;
+    &_title {
+      margin-top: 50px;
+      &_text {
+        font-size: 24px;
+        text-align: center;
+      }
+      &_sub {
+        &_title {
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+    }
+    &_form {
+      margin-top: 30px;
+      flex-direction: column;
+      &_img {
+        &_opt {
+        }
+      }
+      &_contact {
+        &_label {
+          padding-left: 0;
+        }
+        &_imput {
+        }
+        &_textarea {
+        }
+        &_btn {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .feedback {
+    &_title {
+      &_text {
+        font-size: 20px;
+      }
+      &_sub {
+        &_title {
+        }
+      }
+    }
+    &_form {
+      &_img {
+        &_opt {
+        }
+      }
+      &_contact {
+        &_label {
+        }
+        &_imput {
+        }
+        &_textarea {
+        }
+        &_btn {
+        }
+      }
+    }
+  }
+}

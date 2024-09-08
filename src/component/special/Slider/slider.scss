@@ -1,0 +1,66 @@
+@import "../../../styles/index.scss";
+
+.slider {
+  &_block {
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    height: 760px;
+  }
+  &_photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+    height: 100%;
+  }
+}
+.carousel [aria-label] {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
+  background: transparent !important;
+  border: 1px solid $main-color !important;
+}
+.carousel .carousel-indicators {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.carousel .carousel-indicators .active {
+  background: $main-color !important;
+}
+
+@media (max-width: 720px) {
+  .slider {
+    &_block {
+      position: relative;
+      max-width: 325px;
+      width: 100%;
+      height: 225px;
+    }
+    &_photo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 110%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    &_block {
+      max-width: 100%;
+      height: 270px;
+    }
+    &_photo {
+    }
+  }
+}

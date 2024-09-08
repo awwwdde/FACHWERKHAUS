@@ -1,0 +1,63 @@
+@import "../../styles/index.scss";
+
+.about {
+  padding: 0 15px;
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+  &_top {
+    &_text {
+      font-weight: 300;
+      font-size: 48px;
+      text-align: justify;
+      letter-spacing: 0.25em;
+      color: $main-color;
+    }
+    &_desrc {
+      display: flex;
+      padding-top: 60px;
+
+      &_text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: justify;
+        color: $second-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    &_top {
+      &_text {
+        text-align: center;
+        letter-spacing: 0;
+      }
+      &_desrc {
+        display: flex;
+        padding-top: 40px;
+        margin-bottom: 35px;
+        &_text {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    &_top {
+      &_text {
+        font-size: 36px;
+      }
+      &_desrc {
+        &_text {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
